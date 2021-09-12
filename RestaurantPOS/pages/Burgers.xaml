@@ -1,0 +1,45 @@
+﻿<Page x:Class="RestaurantPOS.pages.Burgers"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:RestaurantPOS.pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="410" d:DesignWidth="270"
+      Title="Burgers">
+
+    <Grid >
+        <Grid.Background>
+            <ImageBrush ImageSource="../Assets/Burgers1.png"/>
+        </Grid.Background>
+        <ScrollViewer Margin="30,95,30,30" VerticalScrollBarVisibility="Visible">
+            <Grid >
+            
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+
+
+                <Button Grid.Column="0" Height="70" Margin="10" Content="Zinger Burger" Click="onClickSelectedBurger" Background="#FFC5B7B7" FontWeight="Bold" FontFamily="Calibri" FontStyle="Italic" FontSize="12" Foreground="#FF740505"></Button>
+                <Button Grid.Column="1" Height="70" Margin="10" Content="Patty Burger" Click="onClickSelectedBurger" Background="#FFC5B7B7" FontWeight="Bold" FontFamily="Calibri" FontStyle="Italic" FontSize="12" Foreground="#FF740505"></Button>
+                <Button Grid.Column="0" Grid.Row="1" Height="70" Margin="10" Content="Spicy Chicken Burger" Click="onClickSelectedBurger" Background="#FFC5B7B7" FontWeight="Bold" FontFamily="Calibri" FontStyle="Italic" FontSize="12" Foreground="#FF740505"></Button>
+                <Button Grid.Column="1" Grid.Row="1" Height="70" Margin="10" Content="Meat Monster" Click="onClickSelectedBurger" Background="#FFC5B7B7" FontWeight="Bold" FontFamily="Calibri" FontStyle="Italic" FontSize="12" Foreground="#FF740505"></Button>
+                <Button Grid.Column="0" Grid.Row="2" Height="70" Margin="10" Content="Beef Burger" Click="onClickSelectedBurger" Background="#FFC5B7B7" FontWeight="Bold" FontFamily="Calibri" FontStyle="Italic" FontSize="12" Foreground="#FF740505"></Button>
+                <Button Grid.Column="0" Grid.Row="3" Height="70" Margin="10" Content="Spicy Beef Burger" Click="onClickSelectedBurger" Background="#FFC5B7B7" FontWeight="Bold" FontFamily="Calibri" FontStyle="Italic" FontSize="12" Foreground="#FF740505"></Button>
+                <Button Grid.Column="1" Grid.Row="2" Height="70" Margin="10" Content="Double Cheese" Click="onClickSelectedBurger" Background="#FFC5B7B7" FontWeight="Bold" FontFamily="Calibri" FontStyle="Italic" FontSize="12" Foreground="#FF740505"></Button>
+                <Button Grid.Column="1" Grid.Row="3" Height="70" Margin="10" Content="Chicken Chapli" Click="onClickSelectedBurger" Background="#FFC5B7B7" FontWeight="Bold" FontFamily="Calibri" FontStyle="Italic" FontSize="12" Foreground="#FF740505"></Button>
+                <Button Grid.Column="0" Grid.Row="4" Height="70" Margin="10" Content="Fish Fillet Burger" Click="onClickSelectedBurger" Background="#FFC5B7B7" FontWeight="Bold" FontFamily="Calibri" FontStyle="Italic" FontSize="12" Foreground="#FF740505"></Button>
+                    
+
+            </Grid>
+        </ScrollViewer>
+    </Grid>
+</Page>

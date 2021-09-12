@@ -1,0 +1,46 @@
+﻿<Page x:Class="RestaurantPOS.pages.Pizzas"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:RestaurantPOS.pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="410" d:DesignWidth="270"
+      Title="Pizzas">
+
+    <Grid >
+        <Grid.Background>
+            <ImageBrush ImageSource="../Assets/Pizzas1.png"/>
+        </Grid.Background>
+        <ScrollViewer Margin="30,95,30,30" VerticalScrollBarVisibility="Visible">
+            <Grid>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+
+
+
+
+
+                <Button x:Name="btn1" Grid.Column="0" Height="70" Margin="10" Content="Pepperoni &#xa;    Pizza" Click="onClickPepperoni" Background="#FFC5B7B7" FontWeight="Bold" FontFamily="Calibri" FontStyle="Italic" FontSize="15" Foreground="#FF740505" ></Button>
+                <Button Grid.Column="1" Height="70" Margin="10" Content="Kebab&#xa; Pizza" Click="onClickKebab" Background="#FFC5B7B7" FontWeight="Bold" FontFamily="Calibri" FontStyle="Italic" FontSize="15" Foreground="#FF740505"></Button>
+                <Button Grid.Column="0" Grid.Row="1" Height="70" Margin="10" Content="Tandoori&#xa;    Pizza" Click="onClickTandoori" Background="#FFC5B7B7" FontWeight="Bold" FontFamily="Calibri" FontStyle="Italic" FontSize="15" Foreground="#FF740505"></Button>
+                <Button Grid.Column="1" Grid.Row="1" Height="70" Margin="10" Content="Tikka Pizza" Click="onClickTikka" Background="#FFC5B7B7" FontWeight="Bold" FontFamily="Calibri" FontStyle="Italic" FontSize="15" Foreground="#FF740505"></Button>
+                <Button Grid.Column="0" Grid.Row="2" Height="70" Margin="10" Content="Fajita Pizza" Click="onClickFajita" Background="#FFC5B7B7" FontWeight="Bold" FontFamily="Calibri" FontStyle="Italic" FontSize="15" Foreground="#FF740505"></Button>
+                <Button Grid.Column="0" Grid.Row="3" Height="70" Margin="10" Content="Chicken Supreme " Click="onClickChickenSupreme" Background="#FFC5B7B7" FontWeight="Bold" FontFamily="Calibri" FontStyle="Italic" FontSize="15" Foreground="#FF740505"></Button>
+                <Button Grid.Column="1" Grid.Row="2" Height="70" Margin="10" Content="BBQ Ranch&#xa;     Pizza" Click="onClickBBQRanch" Background="#FFC5B7B7" FontWeight="Bold" FontFamily="Calibri" FontStyle="Italic" FontSize="15" Foreground="#FF740505"></Button>
+                <Button Grid.Column="1" Grid.Row="3" Height="70" Margin="10" Content="Malai Boti &#xa;  Pizza" Click="onClickMalaiBoti" Background="#FFC5B7B7" FontWeight="Bold" FontFamily="Calibri" FontStyle="Italic" FontSize="15" Foreground="#FF740505"></Button>
+               
+            </Grid>
+        </ScrollViewer>
+    </Grid>
+</Page>

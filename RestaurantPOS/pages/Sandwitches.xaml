@@ -1,0 +1,42 @@
+﻿<Page x:Class="RestaurantPOS.pages.Sandwitches"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:RestaurantPOS.pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="410" d:DesignWidth="270"
+      Title="Sandwitches">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="../Assets/Sandwiches1.png"/>
+        </Grid.Background>
+        <ScrollViewer Margin="30,95,30,30" VerticalScrollBarVisibility="Visible">
+            <Grid>
+                
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <Button Grid.Column="0" Height="70" Margin="10" Content="  Chicken&#xa; Sandwich" Click="onClickChicken" Background="#FFC5B7B7" FontWeight="Bold" FontFamily="Calibri" FontStyle="Italic" FontSize="15" Foreground="#FF740505"></Button>
+                <Button Grid.Column="1" Height="70" Margin="10" Content="    Beef&#xa; Sandwich" Click="onClickBeef" Background="#FFC5B7B7" FontWeight="Bold" FontFamily="Calibri" FontStyle="Italic" FontSize="15" Foreground="#FF740505"></Button>
+                <Button Grid.Column="0" Grid.Row="1" Height="70" Margin="10" Content="  Cheese&#xa; Sandwich" Click="onClickCheese" Background="#FFC5B7B7" FontWeight="Bold" FontFamily="Calibri" FontStyle="Italic" FontSize="15" Foreground="#FF740505"></Button>
+                <Button Grid.Column="1" Grid.Row="1" Height="70" Margin="10" Content="     Grill&#xa; Sandwich" Click="onClickGrill" Background="#FFC5B7B7" FontWeight="Bold" FontFamily="Calibri" FontStyle="Italic" FontSize="15" Foreground="#FF740505"></Button>
+                <Button Grid.Column="0" Grid.Row="2" Height="70" Margin="10" Content="Grilled &#xa;Cheese" Click="onClickGrilledCheese" Background="#FFC5B7B7" FontWeight="Bold" FontFamily="Calibri" FontStyle="Italic" FontSize="15" Foreground="#FF740505"></Button>
+                <Button Grid.Column="0" Grid.Row="3" Height="70" Margin="10" Content="    Fish&#xa; Sandwich" Click="onClickFish" Background="#FFC5B7B7" FontWeight="Bold" FontFamily="Calibri" FontStyle="Italic" FontSize="15" Foreground="#FF740505"></Button>
+                <Button Grid.Column="1" Grid.Row="2" Height="70" Margin="10" Content="    Bacon&#xa; Sandwich" Click="onClickBacon" Background="#FFC5B7B7" FontWeight="Bold" FontFamily="Calibri" FontStyle="Italic" FontSize="15" Foreground="#FF740505"></Button>
+                
+
+            </Grid>
+        </ScrollViewer>
+    </Grid>
+</Page>

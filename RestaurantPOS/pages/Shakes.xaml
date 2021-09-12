@@ -1,0 +1,44 @@
+﻿<Page x:Class="RestaurantPOS.pages.Shakes"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:RestaurantPOS.pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="410" d:DesignWidth="270"
+      Title="Shakes">
+
+    <Grid >
+        <Grid.Background>
+            <ImageBrush ImageSource="../Assets/Shakes1.png"/>
+        </Grid.Background>
+        <ScrollViewer Margin="30,95,30,30" VerticalScrollBarVisibility="Visible">
+            <Grid>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <Button Grid.Column="0" Height="70" Margin="10" Content="Oreo Shake" Click="onClickOreo" Background="#FFC5B7B7" FontWeight="Bold" FontFamily="Calibri" FontStyle="Italic" FontSize="15" Foreground="#FF740505"></Button>
+                <Button Grid.Column="1" Height="70" Margin="10" Content="Chocolate &#xa;   Shake" Click="onClickChocolate" Background="#FFC5B7B7" FontWeight="Bold" FontFamily="Calibri" FontStyle="Italic" FontSize="15" Foreground="#FF740505"></Button>
+                <Button Grid.Column="0" Grid.Row="1" Height="70" Margin="10" Content="Kitkat&#xa;Shake" Click="onClickKitkat" Background="#FFC5B7B7" FontWeight="Bold" FontFamily="Calibri" FontStyle="Italic" FontSize="15" Foreground="#FF740505"></Button>
+                <Button Grid.Column="1" Grid.Row="1" Height="70" Margin="10" Content="Strawbery&#xa;   Shake" Click="onClickStrawbery" Background="#FFC5B7B7" FontWeight="Bold" FontFamily="Calibri" FontStyle="Italic" FontSize="15" Foreground="#FF740505"></Button>
+                <Button Grid.Column="0" Grid.Row="2" Height="70" Margin="10" Content="Vanilla&#xa; Shake" Click="onClickVanilla" Background="#FFC5B7B7" FontWeight="Bold" FontFamily="Calibri" FontStyle="Italic" FontSize="15" Foreground="#FF740505"></Button>
+                <Button Grid.Column="0" Grid.Row="3" Height="70" Margin="10" Content="Caramel&#xa;  Shake" Click="onClickCaramel" Background="#FFC5B7B7" FontWeight="Bold" FontFamily="Calibri" FontStyle="Italic" FontSize="15" Foreground="#FF740505"></Button>
+                <Button Grid.Column="1" Grid.Row="2" Height="70" Margin="10" Content=" Cold&#xa;Coffee" Click="onClickColdCoffee" Background="#FFC5B7B7" FontWeight="Bold" FontFamily="Calibri" FontStyle="Italic" FontSize="15" Foreground="#FF740505"></Button>
+                <Button Grid.Column="1" Grid.Row="3" Height="70" Margin="10" Content="Banana&#xa;   Shake" Click="onClickBanana" Background="#FFC5B7B7" FontWeight="Bold" FontFamily="Calibri" FontStyle="Italic" FontSize="15" Foreground="#FF740505"></Button>
+                <Button Grid.Column="0" Grid.Row="4" Height="70" Margin="10" Content="Toffee&#xa; Shake" Click="onClickToffee" Background="#FFC5B7B7" FontWeight="Bold" FontFamily="Calibri" FontStyle="Italic" FontSize="15" Foreground="#FF740505"></Button>
+                
+
+            </Grid>
+        </ScrollViewer>
+    </Grid>
+</Page>

@@ -1,0 +1,43 @@
+﻿<Page x:Class="RestaurantPOS.pages.Icecream"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:RestaurantPOS.pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="410" d:DesignWidth="270"
+      Title="Icecream">
+
+    <Grid >
+        <Grid.Background>
+            <ImageBrush ImageSource="../Assets/Icecreams1.png"/>
+        </Grid.Background>
+        <ScrollViewer Margin="30,95,30,30" VerticalScrollBarVisibility="Visible">
+            <Grid>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <Button Grid.Column="0" Height="70" Margin="10" Content="   Vanilla &#xa; Icecream" Click="onClickVanilla" Background="#FFC5B7B7" FontWeight="Bold" FontFamily="Calibri" FontStyle="Italic" FontSize="15" Foreground="#FF740505"></Button>
+                <Button Grid.Column="1" Height="70" Margin="10" Content="   Mango&#xa; Icecream" Click="onClickMango" Background="#FFC5B7B7" FontWeight="Bold" FontFamily="Calibri" FontStyle="Italic" FontSize="15" Foreground="#FF740505"></Button>
+                <Button Grid.Column="0" Grid.Row="1" Height="70" Margin="10" Content="Chocolate &#xa; Icecream" Click="onClickChocolate" Background="#FFC5B7B7" FontWeight="Bold" FontFamily="Calibri" FontStyle="Italic" FontSize="15" Foreground="#FF740505"></Button>
+                <Button Grid.Column="1" Grid.Row="1" Height="70" Margin="10" Content="Chocolate &#xa; Sundae" Click="onClickChocolateSundae" Background="#FFC5B7B7" FontWeight="Bold" FontFamily="Calibri" FontStyle="Italic" FontSize="15" Foreground="#FF740505"></Button>
+                <Button Grid.Column="0" Grid.Row="2" Height="70" Margin="10" Content="Blueberry &#xa; Sundae" Click="onClickBlueberrySundae" Background="#FFC5B7B7" FontWeight="Bold" FontFamily="Calibri" FontStyle="Italic" FontSize="15" Foreground="#FF740505"></Button>
+                <Button Grid.Column="0" Grid.Row="3" Height="70" Margin="10" Content="  Caramel &#xa; Icecream" Click="onClickCaramel" Background="#FFC5B7B7" FontWeight="Bold" FontFamily="Calibri" FontStyle="Italic" FontSize="15" Foreground="#FF740505"></Button>
+                <Button Grid.Column="1" Grid.Row="2" Height="70" Margin="10" Content="  Brownie &#xa; Icecream" Click="onClickBrowniw" Background="#FFC5B7B7" FontWeight="Bold" FontFamily="Calibri" FontStyle="Italic" FontSize="15" Foreground="#FF740505"></Button>
+                <Button Grid.Column="1" Grid.Row="3" Height="70" Margin="10" Content="Strawbery &#xa; Icecream" Click="onClickStrawbery" Background="#FFC5B7B7" FontWeight="Bold" FontFamily="Calibri" FontStyle="Italic" FontSize="15" Foreground="#FF740505"></Button>
+                
+
+            </Grid>
+        </ScrollViewer>
+    </Grid>
+</Page>
